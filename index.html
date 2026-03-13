@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonRoleplay Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="background-container">
+        <img src="assets/bg.png" alt="Background" id="bg-image">
+    </div>
+
+    <main class="content">
+        <header class="server-header">
+            <h1 class="logo-text">NEON<span>ROLEPLAY</span></h1>
+            <p class="tagline">L'aventure commence ici</p>
+        </header>
+
+        <section class="main-stats">
+            <div class="card player-info">
+                <div class="card-header">BIENVENUE</div>
+                <div class="card-body">
+                    <img src="https://i.imgur.com/8N76f9J.png" alt="Avatar" id="player-avatar">
+                    <div class="player-details">
+                        <span id="player-name">Soldat</span>
+                        <small id="player-steamid">Chargement...</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card map-info">
+                <div class="card-header">MAP</div>
+                <div class="card-body">
+                    <span id="map-name">rp_neon_city</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules-container">
+            <div class="card rules">
+                <div class="card-header">RÈGLES DU SERVEUR</div>
+                <div class="card-body">
+                    <ul>
+                        <li>Respectez tous les joueurs.</li>
+                        <li>Utilisez votre micro pour parler.</li>
+                        <li>Le Meta-Gaming est interdit.</li>
+                        <li>Le Fear-RP doit être respecté.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="loading-footer">
+            <div class="status-container">
+                <span id="loading-status">Initialisation...</span>
+                <span id="loading-percentage">0%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
